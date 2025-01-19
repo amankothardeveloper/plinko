@@ -65,6 +65,7 @@
 }
 
 @media screen and (max-width: 768px) {
+
   section.plinko {
     &:before {
       height: 40%;
@@ -74,6 +75,48 @@
         rgba(28, 19, 39, 0.6117647059) 67%,
         rgba(28, 19, 39, 0)
       );
+    }
+  }
+
+  section.plinko {
+    .circle-bg {
+      display: none !important;
+    }
+  }
+  section.pyramid {
+    .circle-bg {
+      width: 100%;
+      height: unset;
+      display: flex;
+      overflow: hidden;
+      pointer-events: none;
+      &:after,
+      &:before {
+        content: "";
+        position: absolute;
+        width: 60rem;
+        aspect-ratio: 1 / 1;
+        background: radial-gradient(#dd9fce 0%, #06060600 70%);
+        border-radius: 50rem;
+        opacity: 30%;
+        z-index: 11;
+        top: 134%;
+        left: 30%;
+        transform: translate(-50%, -50%);
+      }
+      &:after {
+        left: unset;
+        right: -30%;
+      }
+    }
+    .game-pyramid {
+      .row{
+        column-gap: 1rem;
+        .ball{
+          width: 0.5rem;
+          height: 0.5rem;
+        }
+      }
     }
   }
 }
