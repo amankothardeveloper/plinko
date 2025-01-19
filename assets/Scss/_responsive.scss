@@ -4,3 +4,76 @@
     font-size: 1vw;
   }
 }
+@media screen and (max-width: 1000px) {
+  section.plinko {
+    header {
+      h4.welcome-bonus {
+        padding-left: 4.5rem;
+        height: 4.5rem;
+        font-size: 1rem;
+        &:after {
+          left: 5rem;
+          right: 0;
+        }
+      }
+      a.brand {
+        &:after {
+          height: 4.5rem;
+        }
+      }
+      .cta {
+        &:before {
+          height: 4.5rem;
+          transform: translateX(-43%);
+        }
+      }
+    }
+    &:before {
+      height: 40%;
+      background: linear-gradient(
+        180deg,
+        #1c1327 33%,
+        rgba(28, 19, 39, 0.6117647059) 57%,
+        rgba(28, 19, 39, 0)
+      );
+    }
+    .girl-image {
+      img.plinko-girl {
+        width: 89%;
+        margin-top: 2.5rem;
+      }
+    }
+  }
+  section.how-it-works {
+    .card-container {
+      .hiw-card {
+        max-width: calc(50% - 0.5rem);
+        &:last-child {
+          max-width: calc(100% - 0.5rem);
+        }
+      }
+    }
+  }
+
+  section.records {
+    .record-card-container {
+      .record-card {
+        width: calc(50% - 1rem);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  section.plinko {
+    &:before {
+      height: 40%;
+      background: linear-gradient(
+        180deg,
+        #1c1327 46%,
+        rgba(28, 19, 39, 0.6117647059) 67%,
+        rgba(28, 19, 39, 0)
+      );
+    }
+  }
+}

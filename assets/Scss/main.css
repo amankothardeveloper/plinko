@@ -336,7 +336,7 @@ section.plinko {
   background-repeat: no-repeat;
 }
 section.plinko header {
-  z-index: 1;
+  z-index: 9;
   padding-top: 1rem;
 }
 section.plinko header a.brand {
@@ -723,6 +723,7 @@ section.pyramid img.plinko-logo {
   animation: contrast 2s infinite ease;
   pointer-events: none;
   transform: translate(calc(-50% + 15rem), calc(-50% - 15rem));
+  pointer-events: none;
 }
 @keyframes contrast {
   0% {
@@ -1028,5 +1029,46 @@ section.copy-right {
   :root {
     --container-size: 80%;
     font-size: 1vw;
+  }
+}
+@media screen and (max-width: 1000px) {
+  section.plinko header h4.welcome-bonus {
+    padding-left: 4.5rem;
+    height: 4.5rem;
+    font-size: 1rem;
+  }
+  section.plinko header h4.welcome-bonus:after {
+    left: 5rem;
+    right: 0;
+  }
+  section.plinko header a.brand:after {
+    height: 4.5rem;
+  }
+  section.plinko header .cta:before {
+    height: 4.5rem;
+    transform: translateX(-43%);
+  }
+  section.plinko:before {
+    height: 40%;
+    background: linear-gradient(180deg, #1c1327 33%, rgba(28, 19, 39, 0.6117647059) 57%, rgba(28, 19, 39, 0));
+  }
+  section.plinko .girl-image img.plinko-girl {
+    width: 89%;
+    margin-top: 2.5rem;
+  }
+  section.how-it-works .card-container .hiw-card {
+    max-width: calc(50% - 0.5rem);
+  }
+  section.how-it-works .card-container .hiw-card:last-child {
+    max-width: calc(100% - 0.5rem);
+  }
+  section.records .record-card-container .record-card {
+    width: calc(50% - 1rem);
+  }
+}
+@media screen and (max-width: 768px) {
+  section.plinko:before {
+    height: 40%;
+    background: linear-gradient(180deg, #1c1327 46%, rgba(28, 19, 39, 0.6117647059) 67%, rgba(28, 19, 39, 0));
   }
 }/*# sourceMappingURL=main.css.map */

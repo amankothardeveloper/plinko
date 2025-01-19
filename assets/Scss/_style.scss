@@ -4,7 +4,7 @@ section.plinko {
   background-position: center 5rem;
   background-repeat: no-repeat;
   header {
-    z-index: 1;
+    z-index: 9;
     padding-top: 1rem;
     a.brand {
       border: 0.063rem solid;
@@ -402,6 +402,7 @@ section.pyramid {
     animation: contrast 2s infinite ease;
     pointer-events: none;
     transform: translate(calc(-50% + 15rem), calc(-50% + -15rem));
+    pointer-events: none;
   }
   @keyframes contrast {
     0% {
