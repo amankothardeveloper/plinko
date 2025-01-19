@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --theme-color: #ae78f2;
+  --theme-color-alt: #c689f5;
+  --theme-color-light: #dd9fce;
+  --theme-color-white: #ffffff;
+  --theme-color-dark: #1c1327;
+  --theme-color-dgrey: #1f1f1f;
+  --theme-color-grey: #4c4c4c;
+  --theme-color-lgrey: #9e9e9e;
+  --theme-font: "plinko";
+  --theme-font-alt:"plinko-alt";
+  --theme-font-alt-n:"plinko-alt-n";
+  font-size: 16px;
+  --container-size:1274px;
+}
+body {
+  font-size: 1rem;
+  font-weight: normal;
+  background: var(--theme-color-dark);
+  font-family: var(--theme-font);
+  color: var(--theme-color-white);
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}

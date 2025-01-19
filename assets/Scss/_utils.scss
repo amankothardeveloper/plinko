@@ -1,0 +1,172 @@
+// Grid and Containers
+.site-container {
+  max-width: var(--container-size);
+  margin: {
+    left: auto;
+    right: auto;
+  }
+  padding: {
+    left: 1rem;
+    right: 1rem;
+  }
+}
+// Positions and transformations -------------------
+$positions: relative, absolute, static, sticky;
+
+@each $value in $positions {
+  .position-#{$value} {
+    position: #{$value};
+  }
+}
+// flex------------
+.flex {
+  display: flex;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+$justify-options: flex-start, center, flex-end, space-between;
+
+@each $value in $justify-options {
+  .justify-#{$value} {
+    justify-content: #{$value};
+  }
+}
+
+$align-options: start, center, flex-end;
+
+@each $value in $justify-options {
+  .align-#{$value} {
+    align-items: #{$value};
+  }
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+// list -------------
+.list-null {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+// padding and margins ----------------
+.p-sec {
+  padding-top: var(--section-space);
+  padding-bottom: var(--section-space);
+}
+
+$spaces: 1, 2;
+
+@each $space in $spaces {
+  .pl-#{$space} {
+    padding-left: #{$space}rem;
+  }
+
+  .pr-#{$space} {
+    padding-right: #{$space}rem;
+  }
+
+  .pb-#{$space} {
+    padding-bottom: #{$space}rem;
+  }
+
+  .pt-#{$space} {
+    padding-top: #{$space}rem;
+  }
+
+  .py-#{$space} {
+    padding-top: #{$space}rem;
+    padding-bottom: #{$space}rem;
+  }
+
+  .px-#{$space} {
+    padding-left: #{$space}rem;
+    padding-right: #{$space}rem;
+  }
+
+  .ml-#{$space} {
+    margin-left: #{$space}rem;
+  }
+
+  .mr-#{$space} {
+    margin-right: #{$space}rem;
+  }
+
+  .mb-#{$space} {
+    margin-bottom: #{$space}rem;
+  }
+
+  .mt-#{$space} {
+    margin-top: #{$space}rem;
+  }
+
+  .my-#{$space} {
+    margin-top: #{$space}rem;
+    margin-bottom: #{$space}rem;
+  }
+
+  .mx-#{$space} {
+    margin-left: #{$space}rem;
+    margin-right: #{$space}rem;
+  }
+}
+
+// colors --------------------
+.theme-color {
+  color: var(--theme-color);
+}
+.theme-fill {
+  fill: var(--theme-color);
+}
+.text-white {
+  color: var(--white);
+}
+
+// width and height---------------
+
+$sizes: 25, 50, 75, 100;
+
+@each $value in $sizes {
+  .w-#{$value} {
+    width: #{$value + "%"};
+  }
+  .h-#{$value} {
+    height: #{$value + "%"};
+  }
+}
+
+// Others -----------------------
+
+.object-cover {
+  object-fit: cover;
+}
+.object-contain {
+  object-fit: contain;
+}
+.overflow-hidden {
+  overflow: hidden;
+}
+.overflow-overlay {
+  overflow: overlay;
+}
+
+$text-type: uppercase, lowercase, capitalize;
+@each $value in $text-type {
+  .text-#{$value} {
+    text-transform: #{$value};
+  }
+}
+
+$font-weight-type: normal, lighter, bold;
+@each $value in $font-weight-type {
+  .#{$value} {
+    font-weight: #{$value};
+  }
+}
+
+.text-center{
+  text-align: center;
+}
